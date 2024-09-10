@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- Green field -->
+  <rect x="0" y="0" width="300" height="300" fill="#90EE90" />
+  
+  <!-- Diamond shape with wider basepath -->
+  <polygon points="150,50 250,150 150,250 50,150" fill="none" stroke="white" stroke-width="8" />
+  
+  <!-- Bases -->
+  <rect x="143" y="243" width="14" height="14" fill="white" /> <!-- Home plate -->
+  <rect x="243" y="143" width="14" height="14" fill="white" /> <!-- First base -->
+  <rect x="143" y="43" width="14" height="14" fill="white" /> <!-- Second base -->
+  <rect x="43" y="143" width="14" height="14" fill="white" /> <!-- Third base -->
+  
+  <!-- Labels -->
+  <text x="150" y="275" font-family="Arial" font-size="14" text-anchor="middle">Home</text>
+  <text x="270" y="150" font-family="Arial" font-size="14" text-anchor="middle">1st</text>
+  <text x="150" y="35" font-family="Arial" font-size="14" text-anchor="middle">2nd</text>
+  <text x="30" y="150" font-family="Arial" font-size="14" text-anchor="middle">3rd</text>
+  
+  <!-- Smaller arrows for running direction -->
+  <path d="M165,230 Q195,200 230,165" fill="none" stroke="red" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M230,135 Q200,105 165,70" fill="none" stroke="red" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M135,70 Q100,105 70,135" fill="none" stroke="red" stroke-width="2" marker-end="url(#arrowhead)" />
+  <path d="M70,165 Q100,200 135,230" fill="none" stroke="red" stroke-width="2" marker-end="url(#arrowhead)" />
+  
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" 
+    refX="0" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="red" />
+    </marker>
+  </defs>
+</svg>
